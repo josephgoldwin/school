@@ -1,0 +1,89 @@
+
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission - St. Andrews Matriculation School</title>
+  <!-- Bootstrap CSS -->
+  <link rel="icon" href="{% static 'images/logo.png' %}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'css/admission.css' %}">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <!-- Admission Menu -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">St. Andrews Matriculation School</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarAdmission" aria-controls="navbarAdmission" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarAdmission">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#admission-details" target="_blank">Admission Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#eligibility" target="_blank">Eligibility Criteria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#fees-structure" target="_blank">Fees Structure</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#apply-now" target="_blank">Apply Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Admission Details Section -->
+  <section id="admission-details" class="admission-details py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Admission Details</h2>
+      <p>St. Andrews Matriculation School offers an excellent academic environment for students. Admission is open for classes 1 to 12, based on the availability of seats.</p>
+    </div>
+  </section>
+
+  <!-- Eligibility Section -->
+  <section id="eligibility" class="eligibility py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Eligibility Criteria</h2>
+      <p>Students must meet the following criteria to be eligible for admission:</p>
+      <ul>
+        <li>Minimum age of 5 years for class 1 admission.</li>
+        <li>Completion of the previous grade for admission to higher classes.</li>
+        <li>Submission of required documents (birth certificate, previous school reports, etc.).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Fees Structure Section -->
+  <section id="fees-structure" class="fees-structure py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Fees Structure</h2>
+      <p>Our school offers an affordable and comprehensive fee structure to accommodate all students. The fees vary based on the grade level.</p>
+    </div>
+  </section>
+
+  <!-- Apply Now Section -->
+  <section id="apply-now" class="apply-now py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Apply Now</h2>
+      <p>To apply for admission, please fill out the online application form. Ensure all details are accurate before submitting.</p>
+      <a href="https://www.standrewsschool.com/apply-now" target="_blank" class="btn btn-primary">Fill Application Form</a>
+    </div>
+  </section>
+
+  <!-- Include Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
+{% endblock %}

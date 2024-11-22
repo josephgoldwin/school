@@ -1,0 +1,59 @@
+/* Academics Menu and Sections Styles */
+.navbar {
+    margin-bottom: 20px;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  .curriculum, .subjects-offered, .faculty, .academic-calendar {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+  }
+  
+  .curriculum p, .subjects-offered p, .faculty p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .subjects-offered ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .subjects-offered ul li {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .academic-calendar a {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .academic-calendar a:hover {
+    background-color: #0056b3;
+  }
+  

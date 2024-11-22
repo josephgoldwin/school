@@ -1,0 +1,393 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>&nbsp;St. Andrews Matriculation School</title>
+  <!-- Bootstrap CSS -->
+  <link rel="icon" href="{% static 'images/logo.jpg' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .hero-section{
+      background-image: url("{% static 'images/yoga.jpg' %}");
+    }
+  </style>
+</head>
+<body id="home">
+    
+    
+  
+  <section class="hero-section">
+    
+    <div class="container text-center text-white">
+      <h1 class="display-4">Welcome to St. Andrews Matriculation School</h1>
+      <p class="lead mt-3">Inspiring Excellence, Nurturing Growth</p>
+      <div class="mt-4">
+        <a href="#admission" class="btn btn-primary btn-lg mr-3">Admissions Open</a>
+        <a href="#contact-us" class="btn btn-outline-light btn-lg">Contact Us</a>
+      </div>
+    </div>
+  </section>
+  <section class="about-us py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Text Content -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="section-title">About Us</h2>
+          <p class="lead">
+            Established in 1985, St. Andrews Matriculation School has been dedicated to shaping young minds with a holistic approach to education. Our mission is to inspire excellence and nurture growth through a balanced blend of academics, values, and extracurricular activities.
+          </p>
+          <p>
+            We pride ourselves on our state-of-the-art facilities, experienced faculty, and a safe and inclusive learning environment. Join us to embark on a journey of academic excellence and character building.
+          </p>
+          <a href="#contact" class="btn btn-primary">Learn More</a>
+        </div>
+        <!-- Image Content -->
+        <div class="col-lg-6">
+          <img src="{% static 'images/img4.jpg' %}" alt="About Us Image" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="academics py-5" id="academics">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Our Academics</h2>
+      <div class="row">
+        <!-- Curriculum -->
+        <div class="col-lg-4 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body text-center">
+              <h4 class="card-title">Curriculum</h4>
+              <p class="card-text">
+                A comprehensive Matriculation syllabus designed to foster critical thinking and creativity.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Grade Levels -->
+        <div class="col-lg-4 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body text-center">
+              <h4 class="card-title">Grade Levels</h4>
+              <p class="card-text">
+                Offering education from Kindergarten to Grade 12 with personalized attention to every student.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Achievements -->
+        <div class="col-lg-4 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body text-center">
+              <h4 class="card-title">Achievements</h4>
+              <p class="card-text">
+                Consistently producing toppers in board exams and excelling in inter-school competitions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="#contact" class="btn btn-primary btn-lg">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="facilities py-5" id="facilities">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Our Facilities</h2>
+      <div class="row">
+        <!-- Facility 1 -->
+        <div class="col-md-4 mb-3">
+          <div class="card text-center shadow-sm">
+            <div class="card-body">
+                <img src="{% static 'images/library.jpg' %}" alt="Sports" class="facility-icon mt-3" style="width: 300px; height: 200px;">
+              <h5 class="card-title">Library</h5>
+              <p class="card-text pt-4">
+                A well-stocked library with books, journals, and digital resources for all age groups.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Facility 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card text-center shadow-sm">
+            <div class="card-body">
+                <img src="{% static 'images/science_lab.jpg' %}" alt="Sports" class="facility-icon mt-3" style="width: 300px; height: 200px;">
+              <h5 class="card-title">Science Labs</h5>
+              <p class="card-text">
+                Fully equipped laboratories for Physics, Chemistry, and Biology to encourage practical learning.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Facility 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card text-center shadow-sm">
+            <div class="card-body">
+              <img src="{% static 'images/sports.jpg' %}" alt="Sports" class="facility-icon mt-3" style="width: 300px; height: 200px;">
+              <h5 class="card-title">Sports Facilities</h5>
+              <p class="card-text">
+                State-of-the-art sports facilities including a playground, basketball court, and indoor games.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more facilities as needed -->
+      </div>
+      <div class="text-center mt-4">
+        <a href="#contact" class="btn btn-primary btn-lg">Explore More</a>
+      </div>
+    </div>
+  </section>
+  <section class="activities py-5" id="activities">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Our Activities</h2>
+      <div class="row">
+        <!-- Activity 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card text-center shadow-sm">
+            <div class="card-body">
+              <img src="{% static 'images/music.jpg' %}" alt="Music" class="activity-icon mb-3" style="width: 300px; height: 200px;>
+              <h5 class="card-title">Music</h5>
+              <p class="card-text">
+                From choir to instrumental music, our school encourages a variety of musical talents.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Activity 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card text-center shadow-sm">
+            <div class="card-body">
+              <img src="{% static 'images/drama.jpg' %}" alt="Drama" class="activity-icon mb-3" style="width: 300px; height: 200px;>
+              <h5 class="card-title">Drama</h5>
+              <p class="card-text">
+                Our drama club fosters creativity and expression through various performances and plays.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Activity 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card text-center shadow-sm">
+            <div class="card-body">
+                 
+              <img src="{% static 'images/football.jpg' %}" alt="Sports" class="activity-icon mb-3" style="width: 300px; height: 200px;">
+              <h5 class="card-title">Sports</h5>
+              <p class="card-text">
+                A wide range of sports activities including basketball, football, cricket, kabbadi, athletics, and more.
+              </p>
+            </div>
+          </div>
+          
+        </div>
+        <!-- Add more activities as needed -->
+      </div>
+      <div class="text-center mt-4">
+        <a href="#contact" class="btn btn-primary btn-lg">Join Now</a>
+      </div>
+    </div>
+  </section>
+  <section class="gallery py-5" id="gallery">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Our Gallery</h2>
+      <div class="row">
+        <!-- Gallery Item 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="gallery-item">
+            <img src="{% static 'images/img1.jpg' %}" alt="Gallery Image 1" class="img-fluid" data-toggle="modal" data-target="#imageModal" data-img="image1.jpg" style="width: 300px; height: 200px;">
+          </div>
+        </div>
+        <!-- Gallery Item 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="gallery-item">
+            <img src="{% static 'images/exam.jpg' %}" alt="Gallery Image 2" class="img-fluid" data-toggle="modal" data-target="#imageModal" data-img="image2.jpg" style="width: 300px; height: 200px;">
+          </div>
+        </div>
+        <!-- Gallery Item 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="gallery-item">
+            <img src="{% static 'images/bus.jpg' %}" alt="Gallery Image 3" class="img-fluid" data-toggle="modal" data-target="#imageModal" data-img="image3.jpg" style="width: 300px; height: 200px;">
+          </div>
+        </div>
+        <!-- Add more gallery items as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="" alt="Enlarged Image" class="img-fluid" id="modalImage">
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="testimonials py-5" id="testimonials">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">What Our Students Say</h2>
+      <div id="testimonialsCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Testimonial 1 -->
+          <div class="carousel-item active">
+            <div class="testimonial-item text-center">
+              <img src="{% static 'images/child.png' %}" alt="Student 1" class="rounded-circle mb-3" style="width: 800px; height: 400px;">
+              <h5>John Doe</h5>
+              <p class="font-italic">"St. Andrews has been an amazing experience. The teachers are so supportive, and the facilities are top-notch!"</p>
+            </div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="carousel-item">
+            <div class="testimonial-item text-center">
+              <img src="{% static 'images/child2.png' %}" alt="Student 2" class="rounded-circle mb-3" style="width: 800px; height: 400px;">
+              <h5>Jane Smith</h5>
+              <p class="font-italic">"I love the extracurricular activities here! The school really encourages personal growth in every student."</p>
+            </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="carousel-item">
+            <div class="testimonial-item text-center">
+              <img src="{% static 'images/img3.jpg' %}" alt="Student 3" class="rounded-circle mb-3" style="width: 800px; height: 400px;">
+              <h5>Emily Clark</h5>
+              <p class="font-italic">"The school has a fantastic academic program and helps students achieve their goals. I'm proud to be a part of St. Andrews!"</p>
+            </div>
+          </div>
+        </div>
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#testimonialsCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#testimonialsCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="admission py-5" id="admission">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Admission Process</h2>
+      <p class="text-center mb-4">Join the prestigious St. Andrews Matriculation School and secure a bright future for your child. Fill out the form below to apply for admission.</p>
+      
+      <!-- Admission Form -->
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <form id="admissionForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="childName">Child's Name</label>
+              <input type="text" class="form-control" id="childName" placeholder="Enter child's name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="grade">Grade Applying For</label>
+              <select id="grade" class="form-control" required>
+                <option value="" disabled selected>Select grade</option>
+                <option value="1">Grade 1</option>
+                <option value="2">Grade 2</option>
+                <option value="3">Grade 3</option>
+                <option value="4">Grade 4</option>
+                <option value="5">Grade 5</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Additional Information</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Any additional information" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Submit Application</button>
+          </form>
+          <div id="formMessage" class="mt-3 text-center" style="display: none;">
+            <p class="alert alert-success">Thank you for your application! We will get back to you soon.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact-us py-5" id="contact-us">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Get in Touch</h4>
+          <p>If you have any questions or would like to know more about our school, feel free to reach out. We look forward to hearing from you!</p>
+          
+          <!-- Contact Form -->
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Your message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          </form>
+          <div id="formMessage" class="mt-3 text-center" style="display: none;">
+            <p class="alert alert-success">Your message has been sent successfully! We will get back to you soon.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <h4>Our Location</h4>
+          <div class="map-container">
+            <!-- Embed Google Map -->
+          
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192957.70514136052!2d77.64625521220663!3d8.327806980673305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0489e96da2a505%3A0x35c6387c7cc216f9!2sSt%20Andrews%20Matrculation%20Higher%20Secondary%20School!5e0!3m2!1sen!2sin!4v1732266037234!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endblock %}
+  <!-- Include Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>
+

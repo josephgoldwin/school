@@ -1,0 +1,94 @@
+
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academics - St. Andrews Matriculation School</title>
+  <!-- Bootstrap CSS -->
+  <link rel="icon" href="{% static 'images/logo.png' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'css/academics.css' %}">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <!-- Academics Menu -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">St. Andrews Matriculation School</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarAcademics" aria-controls="navbarAcademics" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarAcademics">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#curriculum" target="_blank">Curriculum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#subjects-offered" target="_blank">Subjects Offered</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faculty" target="_blank">Faculty</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#academic-calendar" target="_blank">Academic Calendar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Curriculum Section -->
+  <section id="curriculum" class="curriculum py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Curriculum</h2>
+      <p>Our curriculum is designed to provide students with a holistic education that promotes critical thinking, creativity, and problem-solving. We offer a blend of traditional and modern teaching methodologies to cater to various learning styles.</p>
+    </div>
+  </section>
+
+  <!-- Subjects Offered Section -->
+  <section id="subjects-offered" class="subjects-offered py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Subjects Offered</h2>
+      <ul>
+        <li>Mathematics</li>
+        <li>Science</li>
+        <li>English</li>
+        <li>Social Studies</li>
+        <li>Physical Education</li>
+        <li>Computer Science</li>
+        <li>Art & Craft</li>
+        <li>Music</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Faculty Section -->
+  <section id="faculty" class="faculty py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Our Faculty</h2>
+      <p>We have a team of dedicated and experienced educators who are passionate about teaching and committed to the academic success of each student. Our faculty members are highly qualified in their respective fields.</p>
+    </div>
+  </section>
+
+  <!-- Academic Calendar Section -->
+  <section id="academic-calendar" class="academic-calendar py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Academic Calendar</h2>
+      <p>The academic calendar outlines the school's important dates, including term start and end dates, holidays, examination schedules, and other events. Stay updated with the academic calendar for a smooth school year.</p>
+      <a href="https://www.standrewsschool.com/academic-calendar" target="_blank" class="btn btn-primary">View Full Academic Calendar</a>
+    </div>
+  </section>
+
+  <!-- Include Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
+{% endblock %}

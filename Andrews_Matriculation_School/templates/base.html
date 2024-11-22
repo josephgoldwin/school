@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>&nbsp;St. Andrews Matriculation School</title>
+  <!-- Bootstrap CSS -->
+  <link rel="icon" href="{% static 'images/logo.jpg' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body id="home">
+    
+    
+  <header> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top ">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="{% static 'images/logo.jpg' %}" alt="School Logo" width="50" height="50"> 
+          St. Andrews School
+        </a>
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about_us' %}">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'admission' %}">Admissions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'academic' %}">Academics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </li>
+          </ul>
+          <!-- Call-to-Action Button -->
+          <a href="#apply" class="btn btn-success ml-3">Apply Now</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  {% block content %}
+  {% endblock content %}
+  <footer class="footer bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Footer Contact Info -->
+        <div class="col-md-4">                             
+          <h5>Contact Information</h5>
+          <p>St. Andrews Matriculation School</p>
+          <p>Email: andrews@gmail.com</p>
+          <p>Phone: +91 1234567890</p>
+          <p>Address: <i>Rathapuram, Tirunelveli, SH-92, Nanguneri Eruvadi Valliyur Vijayapathi Road, Tirunelveli, Tamilnadu, pincode-627111</i></p>
+        </div>
+
+        <!-- Footer Quick Links -->
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#home" class="text-white">Home</a></li>
+            <li><a href="#about" class="text-white">About Us</a></li>
+            <li><a href="#admission" class="text-white">Admission</a></li>
+            <li><a href="#contact-us" class="text-white">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Social Media -->
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#" class="text-white">
+                <i class="fab fa-facebook-f"></i> Facebook
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-white">
+                <i class="fab fa-twitter"></i> Twitter
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-white">
+                <i class="fab fa-instagram"></i> Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+ 
+      <!-- Footer Copyright -->
+      <div class="row mt-4">
+        <div class="col text-center ">
+          <p>&copy; 2024 St. Andrews Matriculation School. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Include Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

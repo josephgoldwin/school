@@ -1,0 +1,486 @@
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .navbar-brand img {
+    margin-right: 10px;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #333;
+    margin-right: 15px;
+    transition: color 0.3s;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  /* Hero Section Styles */
+.hero-section {
+    background: url('images/yoga.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+  }
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for text visibility */
+    z-index: 1;
+  }
+  
+  .hero-section .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-outline-light {
+    border-color: white;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: white;
+    color: #007bff;
+  }
+  /* About Us Section Styles */
+.about-us {
+    background-color: #f9f9f9;
+  }
+  
+  .about-us .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .about-us .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-us .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .about-us img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add animation for the image */
+.animate-img {
+    transform: scale(1.05);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+
+  /* Academics Section Styles */
+.academics {
+    background-color: #f9f9f9;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  .card-text {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Facilities Section Styles */
+.facilities {
+    background-color: #f9f9f9;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .facility-icon {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  /* Fade-in animation for facilities cards */
+  /*.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .card {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  */
+
+  /* Activities Section Styles */
+.activities {
+    background-color: #f9f9f9;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .activity-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+
+  /* Gallery Section Styles */
+.gallery {
+    background-color: #f9f9f9;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.05);
+  }
+  
+  .modal-body img {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+  }
+  /* Testimonials Section Styles */
+.testimonials {
+    background-color: #f9f9f9;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .testimonial-item {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-item img {
+    border: 5px solid #007bff;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #007bff;
+  }
+  
+  .carousel-inner {
+    padding: 40px 0;
+  }
+  
+  .font-italic {
+    font-style: italic;
+    color: #555;
+  }
+  
+  .carousel-item {
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  
+  .carousel-item.active {
+    opacity: 1;
+  }
+  
+
+  /* Admission Section Styles */
+.admission {
+    background-color: #f9f9f9;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .form-control {
+    border-radius: 8px;
+    padding: 15px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 12px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  #formMessage p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Contact Us Section Styles */
+.contact-us {
+    background-color: #f9f9f9;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .form-control {
+    border-radius: 8px;
+    padding: 15px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 12px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  #formMessage p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .map-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+  
+  iframe {
+    border-radius: 8px;
+  }
+  
+
+  /* Footer Section Styles */
+.footer {
+    background-color: #343a40;
+  }
+  
+  .footer h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .footer p, .footer a {
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .footer a:hover {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .footer .list-inline-item {
+    margin-right: 15px;
+  }
+  
+  .footer .list-inline-item a {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  
+  .footer .list-inline-item a:hover {
+    color: #007bff;
+  }
+  
+  .footer .container {
+    padding: 40px 0;
+  }
+  
+  .footer .row {
+    margin-bottom: 30px;
+  }
+  
+  .footer .row .col-md-4 {
+    margin-bottom: 20px;
+  }
+  
+  .footer .row .col {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  .footer .row .col a {
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .footer .row .col a:hover {
+    color: #007bff;
+  }
+  
